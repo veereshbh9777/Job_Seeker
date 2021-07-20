@@ -1,0 +1,27 @@
+.w3-bar-item{
+    background: rebeccapurple;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+}
+.w3-sidebar{
+padding: 10px;
+height: 307px;
+width: 220px;
+}
+h3{
+    color:brown;
+    font-size: 40px;
+    font-family: monospace;
+    font-style: oblique;   
+}
+h1{
+    color:white;
+}
+.nav-link{
+    margin-left: 1200px;
+    font-size: 25px;
+    color: rosybrown;
+}
