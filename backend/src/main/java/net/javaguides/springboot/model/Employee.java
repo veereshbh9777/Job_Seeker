@@ -8,106 +8,80 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "students1")
 public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(name = "first_name")
-	private String firstName;
+	@Column(name = "companies")
+	private String companies;
 
-	@Column(name = "last_name")
-	private String lastName;
+	@Column(name = "question_category")
+	private String questionCategory;
 	
-	@Column(name = "email_id")
-	private String emailId;
+	@Column(name = "questions")
+	private String questions;
 	
-	@Column(name = "Gender")
-	private String gender;
-	
-	@Column(name = "DOB")
-	private String dob;
-	
-	@Column(name = "Qualification")
-	private String qualification;
-	
-	@Column(name = "Disability")
-	private String disability;
+	@Column(name = "comment")
+	private String comment;
 	
 	
 	public Employee() {
 		
 	}
 	
-	public Employee(String firstName, String lastName, String emailId, String gender, String dob, String qualification, String disability) {
+	public Employee(String companies, String questionCategory, String comment, String questions) {
 		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.emailId = emailId;
-		this.gender= gender;
-		this.dob= dob;
-		this.qualification= qualification;
-		this.disability= disability;
+		this.companies = companies;
+		this.questionCategory = questionCategory;
+		this.questions = questions;
+		this.comment= comment;
+		
 		
 		
 	}
+
 	public long getId() {
 		return id;
 	}
+
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public String getEmailId() {
-		return emailId;
-	}
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
+
+	public String getCompanies() {
+		return companies;
 	}
 
-	public String getGender() {
-		return gender;
+	public void setCompanies(String companies) {
+		this.companies = companies;
 	}
 
-	public void setGender(String gender) {
-		this.gender = gender;
+	public String getQuestionCategory() {
+		return questionCategory;
 	}
 
-	public String getDob() {
-		return dob;
+	public void setQuestionCategory(String questionCategory) {
+		this.questionCategory = questionCategory;
 	}
 
-	public void setDob(String dob) {
-		this.dob = dob;
+	public String getQuestions() {
+		return questions;
 	}
 
-	public String getQualification() {
-		return qualification;
+	public void setQuestions(String questions) {
+		this.questions = questions;
 	}
 
-	public void setQualification(String qualification) {
-		this.qualification = qualification;
+	public String getComment() {
+		return comment;
 	}
 
-	public String getDisability() {
-		return disability;
+	public void setComment(String comment) {
+		this.comment = comment;
 	}
-
-	public void setDisability(String disability) {
-		this.disability = disability;
-	}
+	
 	
 }

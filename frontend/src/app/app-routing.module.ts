@@ -10,7 +10,7 @@ import { AuthGaurdService } from './service/auth-gaurd.service';
 
 const routes: Routes = [
   { path: 'employees', component: EmployeeListComponent,canActivate:[AuthGaurdService] },
-  { path: 'create-employee', component: CreateEmployeeComponent,canActivate:[AuthGaurdService] },
+  { path: 'create-employee', component: CreateEmployeeComponent },
   { path: '', redirectTo: 'employees', pathMatch: 'full',canActivate:[AuthGaurdService] },
   { path: 'update-employee/:id', component: UpdateEmployeeComponent,canActivate:[AuthGaurdService] },
   { path: 'employee-details/:id', component: EmployeeDetailsComponent,canActivate:[AuthGaurdService] },

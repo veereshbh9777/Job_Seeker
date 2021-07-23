@@ -1,47 +1,32 @@
 <div class="col-md-6 offset-md-3">
-    <h3> Create Employee </h3>
+    <!-- <h3> Add Questions </h3> -->
     <form (ngSubmit) = "onSubmit()">
-    
-        <div class="form-group">
-            <label> First Name</label>
-            <input type="text" class ="form-control" id = "firstName"
-                [(ngModel)] = "employee.firstName" name = "firstName">
+        <h2>Please select the options</h2><hr>
+        <label><input type="radio" name="optradio">IT</label>&nbsp;&nbsp;&nbsp;
+        <label><input type="radio" name="optradio">BFSI</label>&nbsp;&nbsp;&nbsp;
+        <label><input type="radio" name="optradio">HR</label><hr>
+            <div class="form-group">
+            <label> Company Name</label>
+            <input type="text" class ="form-control" id = "companies"
+                [(ngModel)] = "employee.companies" name = "companies" placeholder="Please enter the company name">
         </div>
     
         <div class="form-group">
-            <label> Last Name</label>
-            <input type="text" class ="form-control" id = "lastName" 
-                [(ngModel)] = "employee.lastName" name = "lastName">
+            <label> Question Category</label>
+            <input type="text" class ="form-control" id = "questionCategory" 
+                [(ngModel)] = "employee.questionCategory" name = "questionCategory" placeholder="Please enter the question category">
         </div>
     
         <div class="form-group">
-            <label> Email Id</label>
-            <input type="text" class ="form-control" id = "emailId"
-                [(ngModel)] = "employee.emailId" name = "emailId">
+            <label> Questions</label>
+            <input type="text" class ="form-control" id = "questions"
+                [(ngModel)] = "employee.questions" name = "questions" placeholder="Please enter the question">
         </div>
 
         <div class="form-group">
-            <label> Gender</label>
-            <input type="text" class ="form-control" id = "gender"
-                [(ngModel)] = "employee.gender" name = "gender">
-        </div>
-
-        <div class="form-group">
-            <label> DOB</label>
-            <input type="text" class ="form-control" id = "dob"
-                [(ngModel)] = "employee.dob" name = "dob">
-        </div>
-
-        <div class="form-group">
-            <label> Qualification</label>
-            <input type="text" class ="form-control" id = "qualification"
-                [(ngModel)] = "employee.qualification" name = "qualification">
-        </div>
-
-        <div class="form-group">
-            <label> Disability</label>
-            <input type="text" class ="form-control" id = "disability"
-                [(ngModel)] = "employee.disability" name = "disability">
+            <label> Comment</label>
+            <input type="text" class ="form-control" id = "comment"
+                [(ngModel)] = "employee.comment" name = "comment" placeholder="Please type if any comments?">
         </div>
 
         <button class = "btn btn-success" type ="submit">Submit</button><br><br>

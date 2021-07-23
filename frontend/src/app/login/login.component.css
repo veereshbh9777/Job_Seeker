@@ -1,8 +1,11 @@
 .form-group{
-    padding-left: 16%;
+    padding-left: 7%;
     margin: 20px;
-    padding-top: 50px;
-    background: rgb(236, 211, 100);
-    height: 350px;
+    padding-top: 10px;
+    background: rgb(214, 116, 71);
+    height: 370px;
     font-size: 22px;
+    margin-left: 590px;
+    width: 380px;
+    color: white;
 }

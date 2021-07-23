@@ -1,11 +1,12 @@
 <div class="col-md-6 offset-md-3">
 <div class="form-group">
     <div>
+        <h1>Admin Login</h1>
         <label> Username : </label>
-        <input type="text" name="username" [(ngModel)]="username">
+        <input type="text" name="username" [(ngModel)]="username" placeholder="Please enter username">
         <br><br>
         <label> Password : </label>
-        <input type="password" name="password" [(ngModel)]="password">
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Please enter password">
         <br><br>
     </div>
     <button (click)=checkLogin() class="btn btn-success">

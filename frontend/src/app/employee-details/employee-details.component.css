@@ -3,10 +3,19 @@
     color: white;
     padding: 20px;
     font-size: 25px;
+    /* padding: 30px; */
+    padding-left:90px; 
 }
 .border{
-   margin: 30px;
+   margin-left: 90px;
+   /* padding: 30px; */
+   
+   padding-left:20px; 
+
+
 }
 h3{
+    /* padding: 30px; */
     padding: 30px;
+    padding-left:90px; 
 }
